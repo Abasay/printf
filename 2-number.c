@@ -16,7 +16,7 @@ int print_from_to(char *start, char *stop, char *except)
 	while (start <= stop)
 	{
 		if (start != except)
-			sum += _putchar(start);
+			sum += _putchar(*start);
 		start++;
 	}
 	return (sum);
@@ -68,7 +68,7 @@ int print_rot13(va_list ap, params_t *params)
 
 	while (a[i])
 	{
-		if ((a[i] >= 'A' && a[i] <= 'Z') || || (a[i] >= 'a' && a[i] <= 'z'))
+		if ((a[i] >= 'A' && a[i] <= 'Z') || (a[i] >= 'a' && a[i] <= 'z'))
 		{
 			index = a[i] - 65;
 			count += _putchar(arr[index]);
